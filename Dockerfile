@@ -1,6 +1,11 @@
 FROM ubuntu:18.04
 LABEL maintainer="dalmatialab"
 
+# Install tzdata and set right timezone
+ENV DEBIAN_FRONTEND="noninteractive"
+RUN apt update && apt-get -y install tzdata
+ENV TZ=Europe/Zagreb
+
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
       git \
