@@ -4,7 +4,7 @@ LABEL maintainer="dalmatialab"
 # Install tzdata and set right timezone
 ENV DEBIAN_FRONTEND="noninteractive"
 RUN apt update && apt-get -y install tzdata
-ENV TZ=Europe/Zagreb
+ENV TZ=Europe/Zagreb SU_TIMEOUT=30 LOG_LEVEL=INFO
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \

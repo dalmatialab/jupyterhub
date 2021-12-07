@@ -17,6 +17,14 @@
 
 This is *optional* variable. It specifes timezone. Default value is `Europe/Zagreb`.
 
+**SU\_TIMEOUT**
+
+This variable specifies timeout for single-user server instance. Default value is 30.
+
+**LOG\_LEVEL**
+
+This variable specifies logging level for the Hub. Default value is INFO.
+
 # NOTE
 
 This image serve as JupyterHub notebook spawners for Kubernetes, so it cannot be used in Docker.  

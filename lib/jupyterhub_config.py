@@ -417,7 +417,7 @@ if not cloud_metadata.get('enabled', False):
 
 
 if get_config('debug.enabled', False):
-    c.JupyterHub.log_level = 'DEBUG'
+    c.JupyterHub.log_level = '"{}"'.format(os.environ['LOG_LEVEL'])
     c.Spawner.debug = True
 
 
@@ -458,3 +458,5 @@ if isinstance(extra_config, str):
 for key, config_py in sorted(extra_config.items()):
     print("Loading extra config: %s" % key)
     exec(config_py)
+
+c.Spawner.http_timeout = int(os.environ['SU_TIMEOUT'])
