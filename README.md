@@ -4,6 +4,7 @@
 
  - [1.0-rc-1](https://github.com/dalmatialab/jupyterhub/blob/86c642af20721bf7b1c5a82e037802946630df32/Dockerfile)
  - [1.0-rc-2](https://github.com/dalmatialab/jupyterhub/blob/1aa98c29fab4db25ec9ab46457f1023bf0ff33dc/Dockerfile)
+ - [1.0-rc-3](https://github.com/dalmatialab/jupyterhub/blob/6c38d7c93c9f47548d49c60ffc6241a3ec52b7cc/Dockerfile)
  
 # What is JupyterHub ? 
 
